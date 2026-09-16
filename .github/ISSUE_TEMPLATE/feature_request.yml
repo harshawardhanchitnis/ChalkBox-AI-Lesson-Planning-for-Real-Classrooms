@@ -1,0 +1,53 @@
+name: Feature request
+description: Propose an improvement to ChalkBox
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Classroom or maintainer problem
+      description: What real problem would this solve?
+      placeholder: Describe the need before the implementation idea.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change and how it would work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What simpler approaches or workarounds have you considered?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Teacher workflow / UX
+        - RAG / source grounding
+        - AI evaluation / safety
+        - Accessibility
+        - Offline / PWA
+        - Assessment / presentation
+        - Internationalization
+        - Developer experience / tooling
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Privacy, safety, copyright, or maintenance considerations
+      description: Note any trust-boundary, classroom-safety, licensing, data, or long-term maintenance impact.
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to help implement or test this change.
